@@ -1,2 +1,2 @@
-# Cyber-Security
-Home lab to simulate cyber attacks and responses using Microsoft Defender XDR and Sentinel
+# Brute-forcing a virtual machine in Azure on SSH using Kali Linux
+
