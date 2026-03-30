@@ -1,1 +1,5 @@
-# This document shows the response steps taken after the attack described in the "Attack" file.
+# This document shows the response steps taken via Microsoft Defender for Cloud after the attack described in the "Attack" file.
+## Steps:
+- Defender for Servers is enabled for my tenant subscription, so it recognized the unusually high number of sign-in attempts on the VM. The alert is visible in Defender for Cloud and also in the Defender XDR portal. <img width="1863" height="874" alt="alert" src="https://github.com/user-attachments/assets/5fc0d6b9-2d2a-481b-b99f-cf2c51da6f6f" />
+- The alert shows the affected device - the Linux VM. In the device view, I can see the recent events related to the device, like the suspicious sign-in attempts. I chose the action "Collect investigation package". By downloading and viewing this file, I could identify the current state of the device and further understand the tools and techniques used by the attacker.<img width="1133" height="514" alt="collect_inv_package" src="https://github.com/user-attachments/assets/9269bbab-e1f7-4026-bc0b-043aa207875d" />[MDE_Investigation_Package.tar.gz](https://github.com/user-attachments/files/26348982/MDE_Investigation_Package.tar.gz)
+ 
