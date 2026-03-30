@@ -3,7 +3,7 @@
 ## Attacked device: an Azure Virtual Machine running Linux, in my own Azure subscription.
 ## Attack method: brute-force the administrator account password using Netcrack and rockyou.txt
 ## Exploited vulnerabilities: left-open SSH port and weak password
-## MITRE ATT&CK tactic used: TA0006: Credentials Access
+## MITRE ATT&CK tactic: TA0006: Credentials Access - technique: T1110: Brute force.
 ## Attack steps:
 - I created an Azure VM with Linux. Defender for Cloud (Servers) in enabled in my subscription. In the network settings, I left the SSH port 22 open for inbound traffic. I also created a weak password for the administrator account.<img width="1862" height="826" alt="ssh_left_open" src="https://github.com/user-attachments/assets/c5f6520f-a107-43a3-98cb-3fdda5c9c08b" />
 - I used the nmap command on my PC to check the open ports of the VM (using its public IP address). I found the SSH port open.<img width="627" height="206" alt="nmap_port_check" src="https://github.com/user-attachments/assets/f483b6ac-46ad-40d2-8171-0f48c4f7341b" />
