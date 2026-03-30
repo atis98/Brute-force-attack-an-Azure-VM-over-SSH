@@ -1,3 +1,2 @@
-# Brute-forcing a virtual machine in Azure on SSH using Kali Linux
+# Brute-forcing a virtual machine in Azure using Netcrack over SSH
 
-valami
